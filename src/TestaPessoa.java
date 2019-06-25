@@ -1,0 +1,24 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author ifnmg
+ */
+public class TestaPessoa {
+    public static void main(String[] args) {
+        
+        try{
+            Pessoa p = new Pessoa("Carla", -1);
+        }catch(IdadeInvalidaException i){
+            
+            System.out.println(i.getMessage());
+        }
+        
+        System.out.println("Continua a execução...");
+    }
+    
+}
